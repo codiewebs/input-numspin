@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Input numspin - A Pure javascript input spin plugin</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/prism-dracula.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+
+	<section class="py-5" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center mt-5 mb-4">
+					<h1 class="fw-bold display-6">Input numspin</h1>
+					<p class="text-muted" style="font-size: 20px;">A Pure javascript input spin plugin.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center mt-5 mb-4">
+					<h4>Demos</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-9">
+					<div>
+						<div id="demo-basic" class="mb-5">
+							<h5>Basic</h5>
+							<div class="card">
+								<div class="card-body">
+									<p class="text-muted">Add <code>[data-numspin]</code> attribute in input with type='number'.</p>
+									<input type="number" class="form-control" data-numspin step="1" min="0" max="10" value="1">
+								</div>
+								<div>
+																<pre class="line-numbers language-markup mb-0">
+<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin step=&quot;1&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;1&quot;&gt;</code>
+</pre>
+								</div>
+							</div> 
+						</div>
+						<div id="demo-prefix" class="mb-5">
+							<h5>Prefix</h5>
+							<div class="card">
+								<div class="card-body">
+									<p class="text-muted">Set <code>[data-prefix="**"]</code> attribute with  <code>[data-numspin]</code> input.</p>
+									<div class="d-flex flex-column gap-3">
+										<input type="number" class="form-control" data-numspin data-prefix="$" step="1" min="0" max="15" value="1">
+
+										<input type="number" class="form-control" data-numspin data-prefix="%" step="1" min="0" max="15" value="1">
+									</div>
+								</div>
+								<div>
+																<pre class="line-numbers language-markup mb-0">
+<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin data-prefix=&quot;$&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
+
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin data-prefix=&quot;%&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+</pre>
+								</div>
+							</div> 
+						</div>
+						<div id="demo-suffix">
+							<h5>Suffix</h5>
+							<div class="card">
+								<div class="card-body">
+									<p class="text-muted">Set <code>[data-suffix="**"]</code> attribute with  <code>[data-numspin]</code> input.</p>
+									<div class="d-flex flex-column gap-3">
+										<input type="number" class="form-control" data-numspin data-suffix="$" step="1" min="0" max="15" value="1">
+
+										<input type="number" class="form-control" data-numspin data-suffix="%" step="1" min="0" max="15" value="1">
+									</div>
+								</div>
+								<div>
+																<pre class="line-numbers language-markup mb-0">
+<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin data-suffix=&quot;$&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
+
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin data-suffix=&quot;%&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+</pre>
+								</div>
+							</div> 
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="card demo-options-element">
+						<div class="card-header">
+							<h6 class="mb-0 text-muted">Options</h6>
+						</div>
+						<nav  class="h-100 flex-column align-items-stretch">
+							<nav class="nav nav-pills flex-column demo-options-navs">
+								<a class="nav-link" href="#demo-basic">Basic</a>
+								<a class="nav-link" href="#demo-prefix">Prefix</a>
+								<a class="nav-link" href="#demo-suffix">Suffix</a>
+								<a class="nav-link" disabled>Coming soon</a>
+							</nav>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/prism.js"></script>
+	<script src="js/input-numspin.min.js"></script>
+</body>
+
+</html>

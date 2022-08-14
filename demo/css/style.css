@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  font-weight: 600;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #377D71;
+  --bs-btn-border-color: #377D71;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #327267;
+  --bs-btn-hover-border-color: #327267;
+  --bs-btn-focus-shadow-rgb: 55, 125, 113;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #2D665C;
+  --bs-btn-active-border-color: #2D665C;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #377D71;
+  --bs-btn-disabled-border-color: #377D71;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #377D71;
+  --bs-btn-border-color: #377D71;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #377D71;
+  --bs-btn-hover-border-color: #377D71;
+  --bs-btn-focus-shadow-rgb: 55, 125, 113;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #377D71;
+  --bs-btn-active-border-color: #377D71;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #377D71;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #377D71;
+  --bs-gradient: none;
+}
+
+:root {
+  --bs-warning: #fff5e0;
+  --bs-warning-rgb: 255, 245, 224;
+  --bs-dark: #2D2D2A;
+  --bs-dark-rgb: 45, 45, 42;
+  --bs-primary: #377D71;
+  --bs-primary-rgb: 55, 125, 113;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #377D71;
+}
+
+/* helper */
+.fw-semibold{
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar-custom .navbar-brand{
+  font-size: 22px;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link{
+  font-weight: 600;
+}
+
+.menuscroll .navbar-light{
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 4%) 0px 0px 0px 1px;
+}
+
+/* component */
+
+.card{
+  --bs-card-border-width: 0px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 4%) 0px 0px 0px 1px;
+}
+
+/* section */
+.section{
+  position: relative;
+  padding: 60px 0;
+}
+
+/* hero-section */
+
+.hero-section{
+  padding-top: 125px;
+}
+
+/* usage-section */
+
+.usage-section{
+  position: relative;
+}
+
+.usage-section::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 200px;
+  background-color: #fff5e0;
+}
+
+.input-numspin-element{
+  max-width: 250px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input-numspin-element input::-webkit-outer-spin-button,
+.input-numspin-element input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input-numspin-element input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* demo-options-navs */
+.demo-options-element{
+  position: sticky;
+  top: 70px;
+}
+
+
+.demo-options-navs .nav-link{
+  color: #2D2D2A;
+}
