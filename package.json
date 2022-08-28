@@ -1,0 +1,22 @@
+{
+  "name": "input-numspin",
+  "version": "1.0.0",
+  "description": "A Pure javascript input spin plugin",
+  "main": "dist",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codiewebs/input-numspin.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "codiewebs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codiewebs/input-numspin/issues"
+  },
+  "homepage": "https://codiewebs.com/input-numspin/"
+}
