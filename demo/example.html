@@ -9,6 +9,7 @@
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/prism-dracula.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/input-numspin.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -64,7 +65,7 @@
 								</div>
 							</div> 
 						</div>
-						<div id="demo-suffix">
+						<div id="demo-suffix" class="mb-5">
 							<h5>Suffix</h5>
 							<div class="card">
 								<div class="card-body">
@@ -84,6 +85,37 @@
 								</div>
 							</div> 
 						</div>
+						<div id="demo-sizing">
+							<h5>Sizing</h5>
+							<div class="card">
+								<div class="card-body">
+									<p class="text-muted">Set <code>[data-input-size="sm"]</code> attribute with  <code>[data-numspin]</code> input form small element.</p>
+
+									<div class="row g-3">
+										<div class="col-lg-6">
+											<div>
+												<label class="form-label">Small</label>
+												<input type="number" class="form-control" data-numspin data-input-size="sm" step="1" min="0" max="15" value="1">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div>
+												<label class="form-label">Normal</label>
+												<input type="number" class="form-control" data-numspin step="1" min="0" max="15" value="1">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+																<pre class="line-numbers language-markup mb-0">
+<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin data-input-size=&quot;sm&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
+
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+</pre>
+								</div>
+							</div> 
+						</div>
+						<!-- end demo-sizing -->
 
 					</div>
 				</div>
@@ -98,6 +130,7 @@
 								<a class="nav-link" href="#demo-basic">Basic</a>
 								<a class="nav-link" href="#demo-prefix">Prefix</a>
 								<a class="nav-link" href="#demo-suffix">Suffix</a>
+								<a class="nav-link" href="#demo-sizing">Sizing</a>
 								<a class="nav-link" disabled>Coming soon</a>
 							</nav>
 						</nav>

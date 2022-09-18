@@ -1,0 +1,49 @@
+/*************************
+Name:       Input Numspin - A Pure javascript input spin plugin.
+Version:    1.3.0
+Author:     codiewebs.com
+file:       css file
+*************************/
+/* Chrome, Safari, Edge, Opera */
+.input-numspin-element input::-webkit-outer-spin-button,
+.input-numspin-element input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input-numspin-element input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-numspin-element{
+    -moz-appearance: textfield;
+    padding: 2px;
+    border-radius: 7px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+}
+
+.input-numspin-element .form-control {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.input-numspin-element .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #377D71;
+    --bs-btn-border-color: #377D71;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #327267;
+    --bs-btn-hover-border-color: #327267;
+    --bs-btn-focus-shadow-rgb: 55, 125, 113;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2D665C;
+    --bs-btn-active-border-color: #2D665C;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #377D71;
+    --bs-btn-disabled-border-color: #377D71;
+}
+
+

@@ -1,8 +1,7 @@
 /*************************
 Name:       Input Numspin - A Pure javascript input spin plugin.
-Version:    1.3.0
+Version:    1.0
 Author:     codiewebs.com
-file:       js file
 *************************/
 document.querySelectorAll("[data-numspin").forEach(function(element){
     // input dom
@@ -50,14 +49,6 @@ document.querySelectorAll("[data-numspin").forEach(function(element){
         var suffixVal = numInput.getAttribute('data-suffix');
         var suffixElem = '<span class="input-group-text">'+suffixVal+'</span>';
         element.insertAdjacentHTML("afterend", suffixElem);
-    }
-
-    // sizing
-    if(numInput.hasAttribute('data-input-size')){
-        var sizingVal = numInput.getAttribute('data-input-size');
-        if(sizingVal == "sm"){
-            console.log(wrapper.classList.add("input-group-sm"))   
-        }
     }
 
     // click events
