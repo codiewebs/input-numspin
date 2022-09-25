@@ -75,6 +75,13 @@ body{
   box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 4%) 0px 0px 0px 1px;
 }
 
+@media (max-width:991.98px) {
+  .navbar-custom{
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 4%) 0px 0px 0px 1px;
+  }
+}
+
 /* component */
 
 .card{
@@ -135,4 +142,11 @@ body{
 
 .demo-options-navs .nav-link{
   color: #2D2D2A;
+}
+
+/* changelog */
+
+.changelog-label{
+  color: #377D71;
+  background-color: rgba(55, 125, 113, 0.2);
 }

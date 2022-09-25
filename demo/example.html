@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/prism-dracula.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/input-numspin.min.css">
+	<link rel="stylesheet" type="text/css" href="css/input-numspin.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -85,7 +85,7 @@
 								</div>
 							</div> 
 						</div>
-						<div id="demo-sizing">
+						<div id="demo-sizing" class="mb-5">
 							<h5>Sizing</h5>
 							<div class="card">
 								<div class="card-body">
@@ -116,7 +116,73 @@
 							</div> 
 						</div>
 						<!-- end demo-sizing -->
+						<div id="demo-style" class="mb-5">
+							<h5>Styles</h5>
+							<div class="card">
+								<div class="card-body">
+									<p class="text-muted">Set <code>[numspin-input-style="**"]</code> attribute with  <code>[data-numspin]</code> for different input styles.</p>
 
+									<div class="row g-3">
+										<div class="col-lg-6">
+											<div>
+												<label class="form-label">Square</label>
+												<input type="number" class="form-control" data-numspin numspin-input-style="square" step="1" min="0" max="15" value="1">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div>
+												<label class="form-label">Rounded</label>
+												<input type="number" class="form-control" data-numspin numspin-input-style="rounded" step="1" min="0" max="15" value="1">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+																<pre class="line-numbers language-markup mb-0">
+<code>&lt;!-- Square input style example --&gt;
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-style=&quot;square&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
+
+&lt;!-- Rounded input style example --&gt;
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-style=&quot;rounded&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+</pre>
+								</div>
+							</div> 
+						</div>
+						<!-- end demo-style -->
+
+						<div id="demo-scheme">
+							<h5>Scheme</h5>
+							<div class="card">
+								<div class="card-body">
+									<p class="text-muted">Set <code>[numspin-input-scheme="**"]</code> attribute with  <code>[data-numspin]</code> for different input scheme.</p>
+
+									<div class="row g-3">
+										<div class="col-lg-6">
+											<div>
+												<label class="form-label">Default (Solid)</label>
+												<input type="number" class="form-control" data-numspin numspin-input-scheme="solid" step="1" min="0" max="15" value="1">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div>
+												<label class="form-label">Flat</label>
+												<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" step="1" min="0" max="15" value="1">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+																<pre class="line-numbers language-markup mb-0">
+<code>&lt;!-- Default (Solid) input scheme example --&gt;
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;solid&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
+
+&lt;!-- flat input scheme example --&gt;
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+</pre>
+								</div>
+							</div> 
+						</div>
+						<!-- end demo-scheme -->
 					</div>
 				</div>
 
@@ -131,6 +197,8 @@
 								<a class="nav-link" href="#demo-prefix">Prefix</a>
 								<a class="nav-link" href="#demo-suffix">Suffix</a>
 								<a class="nav-link" href="#demo-sizing">Sizing</a>
+								<a class="nav-link" href="#demo-style">Styles</a>
+								<a class="nav-link" href="#demo-scheme">Scheme</a>
 								<a class="nav-link" disabled>Coming soon</a>
 							</nav>
 						</nav>

@@ -1,7 +1,8 @@
 /*************************
 Name:       Input Numspin - A Pure javascript input spin plugin.
-Version:    1.0
+Version:    1.3.0
 Author:     codiewebs.com
+file:       js file
 *************************/
 document.querySelectorAll("[data-numspin").forEach(function(element){
     // input dom
@@ -51,9 +52,36 @@ document.querySelectorAll("[data-numspin").forEach(function(element){
         element.insertAdjacentHTML("afterend", suffixElem);
     }
 
+    // sizing
+    if(numInput.hasAttribute('numspin-input-size')){
+        var sizingVal = numInput.getAttribute('numspin-input-size');
+        if(sizingVal == "sm"){
+            wrapper.classList.add("input-group-sm");
+        }
+    }
+
+    // style
+    if(numInput.hasAttribute('numspin-input-style')){
+        var styleVal = numInput.getAttribute('numspin-input-style');
+        if(styleVal == "rounded"){
+            wrapper.classList.add("numspin-input-rounded");
+        }else if(styleVal == "square"){
+            wrapper.classList.add("numspin-input-square");
+        }
+    }
+
+    // style
+    if(numInput.hasAttribute('numspin-input-scheme')){
+        var schemeVal = numInput.getAttribute('numspin-input-scheme');
+        if(schemeVal == "solid"){
+            wrapper.classList.add("numspin-scheme-solid");
+        }else if(schemeVal == "flat"){
+            wrapper.classList.add("numspin-scheme-flat");
+        }
+    }
+
     // click events
     new DOMParser().parseFromString(wrapper, "text/html");
-
     wrapper.querySelector(".plus-btn").addEventListener("click", function(){
         newInputVal = parseInt(numInput.value, 10) + step;
 
