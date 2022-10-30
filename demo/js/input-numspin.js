@@ -1,6 +1,6 @@
 /*************************
 Name:       Input Numspin - A Pure javascript input spin plugin.
-Version:    1.3.0
+Version:    1.5.0
 Author:     codiewebs.com
 file:       js file
 *************************/
@@ -77,6 +77,8 @@ document.querySelectorAll("[data-numspin").forEach(function(element){
             wrapper.classList.add("numspin-scheme-solid");
         }else if(schemeVal == "flat"){
             wrapper.classList.add("numspin-scheme-flat");
+        }else if(schemeVal == "flat-light"){
+            wrapper.classList.add("numspin-scheme-flat-light");
         }
     }
 

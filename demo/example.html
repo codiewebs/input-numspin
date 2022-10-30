@@ -15,198 +15,210 @@
 
 <body class="bg-light">
 
-	<section class="py-5" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center mt-5 mb-4">
-					<h1 class="fw-bold display-6">Input numspin</h1>
-					<p class="text-muted" style="font-size: 20px;">A Pure javascript input spin plugin.</p>
+		<!-- start examples -->
+		<section class="py-5" id="examples">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center mt-4 mb-4">
+						<h4>Demos</h4>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 text-center mt-5 mb-4">
-					<h4>Demos</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-9">
-					<div>
-						<div id="demo-basic" class="mb-5">
-							<h5>Basic</h5>
-							<div class="card">
-								<div class="card-body">
-									<p class="text-muted">Add <code>[data-numspin]</code> attribute in input with type='number'.</p>
-									<input type="number" class="form-control" data-numspin step="1" min="0" max="10" value="1">
-								</div>
-								<div>
-																<pre class="line-numbers language-markup mb-0">
-<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin step=&quot;1&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;1&quot;&gt;</code>
-</pre>
-								</div>
-							</div> 
-						</div>
-						<div id="demo-prefix" class="mb-5">
-							<h5>Prefix</h5>
-							<div class="card">
-								<div class="card-body">
-									<p class="text-muted">Set <code>[data-prefix="**"]</code> attribute with  <code>[data-numspin]</code> input.</p>
-									<div class="d-flex flex-column gap-3">
-										<input type="number" class="form-control" data-numspin data-prefix="$" step="1" min="0" max="15" value="1">
-
-										<input type="number" class="form-control" data-numspin data-prefix="%" step="1" min="0" max="15" value="1">
+				<div class="row g-4 mb-4">
+					<div class="col-lg-9 order-2 order-lg-1">
+						<div>
+							<div id="demo-basic" class="mb-5">
+								<h5>Basic</h5>
+								<div class="card">
+									<div class="card-body">
+										<p class="text-muted">Add <code>[data-numspin]</code> attribute in input with type='number' and set <code>[numspin-input-scheme="flat"]</code> attribute with  <code>[data-numspin]</code> for flat input scheme.</p>
+										<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" step="1" min="0" max="10" value="1">
 									</div>
-								</div>
-								<div>
-																<pre class="line-numbers language-markup mb-0">
-<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin data-prefix=&quot;$&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
-
-&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin data-prefix=&quot;%&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+									<div>
+																	<pre class="line-numbers language-markup mb-0">
+<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;1&quot;&gt;</code>
 </pre>
-								</div>
-							</div> 
-						</div>
-						<div id="demo-suffix" class="mb-5">
-							<h5>Suffix</h5>
-							<div class="card">
-								<div class="card-body">
-									<p class="text-muted">Set <code>[data-suffix="**"]</code> attribute with  <code>[data-numspin]</code> input.</p>
-									<div class="d-flex flex-column gap-3">
-										<input type="number" class="form-control" data-numspin data-suffix="$" step="1" min="0" max="15" value="1">
-
-										<input type="number" class="form-control" data-numspin data-suffix="%" step="1" min="0" max="15" value="1">
 									</div>
-								</div>
-								<div>
-																<pre class="line-numbers language-markup mb-0">
-<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin data-suffix=&quot;$&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
-
-&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin data-suffix=&quot;%&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
-</pre>
-								</div>
-							</div> 
-						</div>
-						<div id="demo-sizing" class="mb-5">
-							<h5>Sizing</h5>
-							<div class="card">
-								<div class="card-body">
-									<p class="text-muted">Set <code>[data-input-size="sm"]</code> attribute with  <code>[data-numspin]</code> input form small element.</p>
-
-									<div class="row g-3">
-										<div class="col-lg-6">
-											<div>
-												<label class="form-label">Small</label>
-												<input type="number" class="form-control" data-numspin data-input-size="sm" step="1" min="0" max="15" value="1">
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<div>
-												<label class="form-label">Normal</label>
-												<input type="number" class="form-control" data-numspin step="1" min="0" max="15" value="1">
-											</div>
+								</div> 
+							</div>
+							<!-- end demo-basic -->
+							<div id="demo-prefix" class="mb-5">
+								<h5>Prefix</h5>
+								<div class="card">
+									<div class="card-body">
+										<p class="text-muted">Set <code>[data-prefix="**"]</code> attribute with  <code>[data-numspin]</code> input.</p>
+										<div class="d-flex flex-column gap-3">
+											<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" data-prefix="$" step="1" min="0" max="15" value="1">	
+											<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" data-prefix="%" step="1" min="0" max="15" value="1">
 										</div>
 									</div>
-								</div>
-								<div>
-																<pre class="line-numbers language-markup mb-0">
-<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin data-input-size=&quot;sm&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
+									<div>
+																	<pre class="line-numbers language-markup mb-0">
+<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; data-prefix=&quot;$&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
 
-&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; data-prefix=&quot;%&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
 </pre>
-								</div>
-							</div> 
-						</div>
-						<!-- end demo-sizing -->
-						<div id="demo-style" class="mb-5">
-							<h5>Styles</h5>
-							<div class="card">
-								<div class="card-body">
-									<p class="text-muted">Set <code>[numspin-input-style="**"]</code> attribute with  <code>[data-numspin]</code> for different input styles.</p>
+									</div>
+								</div> 
+							</div>
+							<!-- end demo-prefix -->
 
-									<div class="row g-3">
-										<div class="col-lg-6">
-											<div>
-												<label class="form-label">Square</label>
-												<input type="number" class="form-control" data-numspin numspin-input-style="square" step="1" min="0" max="15" value="1">
-											</div>
+							<div id="demo-suffix" class="mb-5">
+								<h5>Suffix</h5>
+								<div class="card">
+									<div class="card-body">
+										<p class="text-muted">Set <code>[data-suffix="**"]</code> attribute with  <code>[data-numspin]</code> input.</p>
+										<div class="d-flex flex-column gap-3">
+											<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" data-suffix="$" step="1" min="0" max="15" value="1">
+
+											<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" data-suffix="%" step="1" min="0" max="15" value="1">
 										</div>
-										<div class="col-lg-6">
-											<div>
-												<label class="form-label">Rounded</label>
-												<input type="number" class="form-control" data-numspin numspin-input-style="rounded" step="1" min="0" max="15" value="1">
+									</div>
+									<div>
+																	<pre class="line-numbers language-markup mb-0">
+<code>&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; data-suffix=&quot;$&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
+
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; data-suffix=&quot;%&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+</pre>
+									</div>
+								</div> 
+							</div>
+							<!-- end demo-suffix -->
+
+							<div id="demo-sizing" class="mb-5">
+								<h5>Sizing</h5>
+								<div class="card">
+									<div class="card-body">
+										<p class="text-muted">Set <code>[numspin-input-size="sm"]</code> attribute with  <code>[data-numspin]</code> input form small element.</p>
+
+										<div class="row g-3">
+											<div class="col-lg-6">
+												<div>
+													<label class="form-label">Small</label>
+													<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" numspin-input-size="sm" step="1" min="0" max="15" value="1">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div>
+													<label class="form-label">Normal</label>
+													<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" step="1" min="0" max="15" value="1">
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div>
-																<pre class="line-numbers language-markup mb-0">
+									<div>
+																	<pre class="line-numbers language-markup mb-0">
+<code>&lt;!-- Small size input example --&gt;
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; numspin-input-size=&quot;sm&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
+
+&lt;!-- Default input example --&gt;
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+</pre>
+									</div>
+								</div> 
+							</div>
+							<!-- end demo-sizing -->
+
+							<div id="demo-style" class="mb-5">
+								<h5>Styles</h5>
+								<div class="card">
+									<div class="card-body">
+										<p class="text-muted">Set <code>[numspin-input-style="**"]</code> attribute with  <code>[data-numspin]</code> for different input styles.</p>
+
+										<div class="row g-3">
+											<div class="col-lg-6">
+												<div>
+													<label class="form-label">Square</label>
+													<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" numspin-input-style="square" step="1" min="0" max="15" value="1">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div>
+													<label class="form-label">Rounded</label>
+													<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" numspin-input-style="rounded" step="1" min="0" max="15" value="1">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+																	<pre class="line-numbers language-markup mb-0">
 <code>&lt;!-- Square input style example --&gt;
-&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-style=&quot;square&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; numspin-input-style=&quot;square&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
 
 &lt;!-- Rounded input style example --&gt;
-&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-style=&quot;rounded&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; numspin-input-style=&quot;rounded&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
 </pre>
-								</div>
-							</div> 
-						</div>
-						<!-- end demo-style -->
+									</div>
+								</div> 
+							</div>
+							<!-- end demo-style -->
 
-						<div id="demo-scheme">
-							<h5>Scheme</h5>
-							<div class="card">
-								<div class="card-body">
-									<p class="text-muted">Set <code>[numspin-input-scheme="**"]</code> attribute with  <code>[data-numspin]</code> for different input scheme.</p>
+							<div id="demo-scheme">
+								<h5>Scheme</h5>
+								<div class="card">
+									<div class="card-body">
+										<p class="text-muted">Set <code>[numspin-input-scheme="**"]</code> attribute with  <code>[data-numspin]</code> for different input scheme.</p>
 
-									<div class="row g-3">
-										<div class="col-lg-6">
-											<div>
-												<label class="form-label">Default (Solid)</label>
-												<input type="number" class="form-control" data-numspin numspin-input-scheme="solid" step="1" min="0" max="15" value="1">
+										<div class="row g-3">
+											<div class="col-lg-6">
+												<div>
+													<label class="form-label">Default (Solid)</label>
+													<input type="number" class="form-control" data-numspin numspin-input-scheme="solid" step="1" min="0" max="15" value="1">
+												</div>
 											</div>
-										</div>
-										<div class="col-lg-6">
-											<div>
-												<label class="form-label">Flat</label>
-												<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" step="1" min="0" max="15" value="1">
+											<div class="col-lg-6">
+												<div>
+													<label class="form-label">Flat</label>
+													<input type="number" class="form-control" data-numspin numspin-input-scheme="flat" step="1" min="0" max="15" value="1">
+												</div>
+												<div class="mt-4">
+													<label class="form-label">Flat Light</label>
+													<input type="number" class="form-control" data-numspin numspin-input-scheme="flat-light" step="1" min="0" max="15" value="1">
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div>
-																<pre class="line-numbers language-markup mb-0">
+									<div>
+																	<pre class="line-numbers language-markup mb-0">
 <code>&lt;!-- Default (Solid) input scheme example --&gt;
 &lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;solid&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
 
 &lt;!-- flat input scheme example --&gt;
-&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
-</pre>
-								</div>
-							</div> 
-						</div>
-						<!-- end demo-scheme -->
-					</div>
-				</div>
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;
 
-				<div class="col-lg-3">
-					<div class="card demo-options-element">
-						<div class="card-header">
-							<h6 class="mb-0 text-muted">Options</h6>
+&lt;!-- flat light input scheme example --&gt;
+&lt;input type=&quot;number&quot; class=&quot;form-control&quot; data-numspin numspin-input-scheme=&quot;flat-light&quot; step=&quot;1&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;1&quot;&gt;</code>
+</pre>
+									</div>
+								</div> 
+							</div>
+							<!-- end demo-scheme -->
+
 						</div>
-						<nav  class="h-100 flex-column align-items-stretch">
-							<nav class="nav nav-pills flex-column demo-options-navs">
-								<a class="nav-link" href="#demo-basic">Basic</a>
-								<a class="nav-link" href="#demo-prefix">Prefix</a>
-								<a class="nav-link" href="#demo-suffix">Suffix</a>
-								<a class="nav-link" href="#demo-sizing">Sizing</a>
-								<a class="nav-link" href="#demo-style">Styles</a>
-								<a class="nav-link" href="#demo-scheme">Scheme</a>
-								<a class="nav-link" disabled>Coming soon</a>
-							</nav>
-						</nav>
 					</div>
+					<!-- end col -->
+
+					<div class="col-lg-3 order-1 order-lg-2">
+						<div class="card demo-options-element">
+							<div class="card-header">
+								<h6 class="mb-0 text-muted">Options</h6>
+							</div>
+							<nav  class="h-100 flex-column align-items-stretch">
+								<nav class="nav nav-pills flex-column demo-options-navs">
+									<a class="nav-link" href="#demo-basic">Basic</a>
+									<a class="nav-link" href="#demo-prefix">Prefix</a>
+									<a class="nav-link" href="#demo-suffix">Suffix</a>
+									<a class="nav-link" href="#demo-sizing">Sizing</a>
+									<a class="nav-link" href="#demo-style">Styles</a>
+									<a class="nav-link" href="#demo-scheme">Scheme</a>
+								</nav>
+							</nav>
+						</div>
+					</div>
+					<!-- end col -->
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+		<!-- end examples -->
 
 
 	<script src="js/bootstrap.bundle.min.js"></script>
