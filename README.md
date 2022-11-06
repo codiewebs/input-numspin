@@ -6,5 +6,5 @@ Input numspin is a bootstrap element supported pure javascript input number spin
 <a href="https://codiewebs.com/input-numspin/" target="_blank">Examples</a>
 
 # installation
-`npm i input-numspin --save`
+`npm install input-numspin`
 
